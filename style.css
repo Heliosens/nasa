@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background: midnightblue;
+}
+
+header {
+    padding: 2rem 1rem 0 1rem;
+}
+
+#top-top li {
+    display: inline-block;
+    padding: 1rem;
+    border-right: 1px grey solid;
+}
+
+#top-top li:last-child {
+    border: none;
+}
+
