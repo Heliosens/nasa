@@ -6,24 +6,188 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 body {
     width: 100%;
-    background: midnightblue;
 }
 
+a {
+    color: white;
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+section img {
+    width: 90%;
+}
+
+/**   header  **/
 header {
     padding: 2rem 1rem 0 1rem;
+    color: white;
+    background-image: url("img/starfield-banner.jpg");
+    font-size: 2rem;
 }
 
-#top-top li {
+header img, #nav-bar, #top-nav, #top-nav nav, #bottom-nav, #top-nav div {
+    display: inline-block;
+}
+
+#nav-bar {
+    width: 90%;
+    position: relative;
+}
+
+#top-nav {
+    width: 80%;
+    margin: 0 6rem;
+}
+
+#top-list li, #bottom-nav li {
     display: inline-block;
     padding: 1rem;
+}
+
+#top-list li, #bottom-nav li {
     border-right: 1px grey solid;
 }
 
-#top-top li:last-child {
+#top-list li:last-child, #bottom-nav li:last-child {
     border: none;
 }
+
+header ul {
+    padding: .5rem;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#search {
+    width: 18rem;
+    text-align: right;
+    background: #80808080;
+    padding: 1rem;
+    border: black 1px solid;
+}
+
+#search:hover {
+    border: white 1px solid;
+    border-radius: 5px;
+}
+
+#social {
+    width: 2rem;
+}
+
+#bottom-nav {
+    font-size: 1.5rem;
+}
+
+#bottom-nav {
+    margin-top: 5px;
+    background: #333;
+}
+/**     end header      **/
+
+/** section **/
+section {
+    background: midnightblue;
+    width: 130rem;
+}
+
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+}
+
+.name a {
+    background: #428bca;
+    padding: .5rem;
+}
+
+.description a {
+    background: #ffffff80;
+    padding: .5rem;
+    margin-top: .5rem;
+    display: block;
+    color: black;
+}
+
+#subTitle, #triptych, #img-frame, #blue-frame, .frame {
+    display: inline-block;
+    position: relative;
+}
+
+#top-section {
+    background-image: url("img/1-jupiter_band.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 60rem;
+}
+
+#img-frame img {
+    width: 100%;
+}
+
+#subTitle, #triptych, #img-frame, #blue-frame {
+    width: 49%;
+}
+
+#blue-frame {
+    vertical-align: top;
+    height: 31rem;
+    color: white;
+    background: #39719e;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+#blue-frame > a {
+    padding: 0.5rem;
+    display: block;
+}
+
+#blue-frame p {
+    border-bottom: 1px white solid;
+}
+
+#blue-frame div {
+    border-top: 1px white solid;
+}
+
+#link {
+    margin-top: 9rem;
+}
+
+#link a:last-child {
+    float: right;
+}
+
+#solo {
+    text-align: center;
+}
+
+#middle-section .frame {
+    width: 24%;
+}
+
+#middle-section .frame:nth-child(2) {
+    width: 49%;
+}
+
+#blue-frame {
+    vertical-align: top;
+}
+
 
