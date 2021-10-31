@@ -11,6 +11,12 @@ html {
 
 body {
     width: 100%;
+    background: midnightblue;
+}
+
+main {
+    width: 90%;
+    margin: auto;
 }
 
 a {
@@ -48,7 +54,7 @@ header img, #nav-bar, #top-nav, #top-nav nav, #bottom-nav, #top-nav div {
     margin: 0 6rem;
 }
 
-#top-list li, #bottom-nav li {
+li {
     display: inline-block;
     padding: 1rem;
 }
@@ -100,8 +106,7 @@ header ul {
 
 /** section **/
 section {
-    background: midnightblue;
-    width: 130rem;
+    background: black;
 }
 
 .title {
@@ -109,6 +114,7 @@ section {
     bottom: 0;
     left: 0;
     text-align: left;
+    font-size: 1.8rem;
 }
 
 .name a {
@@ -124,7 +130,7 @@ section {
     color: black;
 }
 
-#subTitle, #triptych, #img-frame, #blue-frame, .frame {
+#triptych, #img-frame, #blue-frame, .frame {
     display: inline-block;
     position: relative;
 }
@@ -134,23 +140,40 @@ section {
     background-repeat: no-repeat;
     background-size: 50%;
     height: 60rem;
+    position: relative;
 }
 
-#img-frame img {
-    width: 100%;
+#black, #triptych {
+    background-color: black;
+    border: 1rem black solid;
 }
 
-#subTitle, #triptych, #img-frame, #blue-frame {
-    width: 49%;
+#subTitle {
+    border-bottom: 1rem black solid;
+}
+
+#duo {
+    background-image: url("img/teamNasa.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 30rem;
+    margin-left: 1rem;
+}
+
+#subTitle, #triptych, #blue-frame {
+    width: 50%;
 }
 
 #blue-frame {
-    vertical-align: top;
-    height: 31rem;
+    width: 50%;
+    height: 30rem;
+    border-left: black 1rem solid;
     color: white;
     background: #39719e;
     padding: 0.5rem;
     font-size: 1.3rem;
+    float: right;
 }
 
 #blue-frame > a {
@@ -162,32 +185,52 @@ section {
     border-bottom: 1px white solid;
 }
 
-#blue-frame div {
-    border-top: 1px white solid;
-}
-
 #link {
-    margin-top: 9rem;
+    border-top: 1px white solid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    width: 100%;
 }
 
 #link a:last-child {
     float: right;
 }
 
-#solo {
-    text-align: center;
+#triptych {
+    height: 60rem;
+    background-image: url("img/2-flare.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    float: right;
 }
 
 #middle-section .frame {
     width: 24%;
+    border: black 1rem solid;
 }
 
 #middle-section .frame:nth-child(2) {
     width: 49%;
 }
 
-#blue-frame {
-    vertical-align: top;
+#bottom-section .frame {
+    width: 33.5rem;
+    border: 1rem black solid;
 }
 
+#line {
+    background: #15418c;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+}
 
+#small-logo div {
+    display: inline-block;
+    vertical-align: top;
+}
