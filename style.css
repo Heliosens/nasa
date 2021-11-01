@@ -208,17 +208,37 @@ section {
 }
 
 #middle-section .frame {
-    width: 24%;
+    width: 24.8%;
     border: black 1rem solid;
 }
 
 #middle-section .frame:nth-child(2) {
-    width: 49%;
+    width: 49.9%;
 }
 
 #bottom-section .frame {
-    width: 33.5rem;
+    width: 24.8%;
+    height: 30rem;
     border: 1rem black solid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#bottom-section .frame:first-child {
+    background-image: url("img/steam.jpg");
+}
+
+#bottom-section .frame:nth-child(2) {
+    background-image: url("img/advisory_group.jpg");
+}
+
+#bottom-section .frame:nth-child(3) {
+    background-image: url("img/iss.jpg");
+}
+
+#bottom-section .frame:nth-child(4) {
+    background-image: url("img/trappist1f.jpg");
 }
 
 #line {
@@ -234,3 +254,4 @@ section {
     display: inline-block;
     vertical-align: top;
 }
+
