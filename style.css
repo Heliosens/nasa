@@ -11,13 +11,9 @@ html {
 
 body {
     width: 100%;
-    background: midnightblue;
+    background: black;
 }
 
-main {
-    width: 90%;
-    margin: auto;
-}
 
 a {
     color: white;
@@ -38,6 +34,10 @@ header {
     color: white;
     background-image: url("img/starfield-banner.jpg");
     font-size: 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 header img, #nav-bar, #top-nav, #top-nav nav, #bottom-nav, #top-nav div {
@@ -47,6 +47,7 @@ header img, #nav-bar, #top-nav, #top-nav nav, #bottom-nav, #top-nav div {
 #nav-bar {
     width: 90%;
     position: relative;
+
 }
 
 #top-nav {
@@ -139,8 +140,9 @@ section {
     background-image: url("img/1-jupiter_band.png");
     background-repeat: no-repeat;
     background-size: 50%;
-    height: 60rem;
+    height: 61rem;
     position: relative;
+    border-top: 1rem black solid;
 }
 
 #black, #triptych {
@@ -207,22 +209,29 @@ section {
     float: right;
 }
 
-#middle-section .frame {
-    width: 24.8%;
-    border: black 1rem solid;
-}
-
-#middle-section .frame:nth-child(2) {
-    width: 49.9%;
-}
-
-#bottom-section .frame {
+#middle-section .frame, #bottom-section .frame {
     width: 24.8%;
     height: 30rem;
     border: 1rem black solid;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+#middle-section .frame:nth-child(2) {
+    width: 49.9%;
+}
+
+#middle-section .frame:first-child {
+    background-image: url("img/ozone.png");
+}
+
+#middle-section .frame:nth-child(2) {
+    background-image: url("img/sarah_yearicks.png");
+}
+
+#middle-section .frame:nth-child(3) {
+    background-image: url("img/gamma_rays.jpeg");
 }
 
 #bottom-section .frame:first-child {
@@ -242,6 +251,7 @@ section {
 }
 
 #line {
+    margin: 2rem 0;
     background: #15418c;
     text-align: center;
     font-size: 1.8rem;
@@ -253,5 +263,18 @@ section {
 #small-logo div {
     display: inline-block;
     vertical-align: top;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
+
+
+footer ul {
+    float: right;
+
+}
+
+footer a {
+    color: #5d7fb9;
+}
