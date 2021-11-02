@@ -34,7 +34,6 @@ header {
     color: white;
     background-image: url("img/starfield-banner.jpg");
     font-size: 2rem;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1;
